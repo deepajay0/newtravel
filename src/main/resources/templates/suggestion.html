@@ -1,0 +1,341 @@
+  <!doctype html>
+  <html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css}"  >
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- First Column -->
+      <div class="col-md-3">
+        <div class="card">
+          <div class="form-group">
+            <label for="region">Select Country</label>
+            <select class="form-control" id="region">
+              <option value="">Select</option>
+
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Column -->
+      <div class="col-md-3">
+        <div class="card">
+          <div class="form-group">
+            <label for="state">Select State</label>
+            <select class="form-control" id="state">
+              <option value="">Select</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Column -->
+      <div class="col-md-3">
+        <div class="card">
+          <div class="form-group">
+            <label for="traveltype">Travel Type</label>
+            <select class="form-control" id="traveltype">
+              <option value="">Select</option>
+
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+          <div class="form-group">
+            <button type="button" class="btn btn-info" id="search">Search</button>
+
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <section class="features">
+    <h1 id="tourtext" class="d-none">Featured Destinations</h1>
+    <div class="container">
+      <div class="row d-none" id="trekking" >
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="image/chandrashilatrak.jpg" alt="Chandrashila Treking">
+              <div class="price">
+                <p>78$</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+
+            </div>
+            <div class="feature-details">
+              <h4>Chandrashila Traking</h4>
+              <p>Head out for a fascinating trek expedition to Chandrashila, the summit of Tungnath,
+                which is prominently known as a famous tourist attraction for high altitude trek lovers.
+                It is located at a height of about 4,000 meters above sea level.
+              </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i>Chandrashila</span>
+                <span><i class="fa fa-sun-o"></i>4 Days</span>
+                <span><i class="fa fa-moon-o"></i>3 Nights</span>
+
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter" >Book Now</button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="image/kedarnathtrak.jpg" alt="kedarnath treking">
+              <div class="price">
+                <p>70$</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-details">
+              <h4>Kedarnath Treking</h4>
+              <p>Kedarkantha is such a popular winter trek that it would be apt to entitle it as the Queen of
+                Winter Treks. Knee-deep snow in winters, mesmerizing view from the top,
+                and the beautiful and easy trails make it popular among trekkers.
+              </p>
+              <div><span><i class="fa fa-map-marker"></i>Kedarnath Treking</span>
+                <span><i class="fa fa-sun-o"></i>3 Days</span>
+                <span><i class="fa fa-moon-o"></i>2 Nights</span>
+
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+
+              </div>
+
+          </div>
+        </div>
+          <!--new div -->
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="image/trak1.jpg" alt="Dodital Treking">
+              <div class="price">
+                <p>82$</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-details">
+              <h4>Dodital Treking</h4>
+              <p>Nestled high up in the mountains at an altitude of 3310 mts above sea level
+                . Known as one of the most beautiful
+                treks in North India this trek has been attracting travelers from far and wide.
+              </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i>Dodital</span>
+                <span><i class="fa fa-sun-o"></i>4 Days</span>
+                <span><i class="fa fa-moon-o"></i>3 Nights</span>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter" >Book Now</button>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row d-none" id="adventure">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="image/adventure.jpg" alt="one">
+              <div class="price">
+                <p>78$</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-details">
+              <h4>Haridwar</h4>
+              <p>Give way to the adventure enthusiast in you in the beautiful state of Uttarakhand that
+                has everything your heart desires.From mighty mountains,majestic rivers,unbeaten paths to the sprawling alpine meadows
+                and the snow-clad gradients in the rugged topography which opens a doorway to the finest adventures.
+              </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i>Haridwar</span>
+                <span><i class="fa fa-sun-o"></i>4 Days</span>
+                <span><i class="fa fa-moon-o"></i>3 Nights</span>
+
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+
+              </div>
+
+          </div>
+        </div>
+        </div>
+          <!--second column start -->
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="image/adventure2.jpg" alt="one">
+              <div class="price">
+                <p>78$</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-details">
+              <h4>Deharadun</h4>
+              <p>Give way to the adventure enthusiast in you in the beautiful state of Uttarakhand that
+                has everything your heart desires.
+                From mighty mountains, majestic rivers, unbeaten paths to the sprawling alpine meadows
+                and the snow-clad gradients in the rugged topography.
+              </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i>Deharadun</span>
+                <span><i class="fa fa-sun-o"></i>4 Days</span>
+                <span><i class="fa fa-moon-o"></i>3 Nights</span>
+
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+
+              </div>
+
+          </div>
+        </div>
+        </div>
+          <!--second column end -->
+          <!--last column start -->
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="image/adventure3.jpg" alt="one">
+              <div class="price">
+                <p>78$</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-details">
+              <h4>Rishikesh</h4>
+              <p>Give way to the adventure enthusiast in you in the beautiful state of Uttarakhand that
+                has everything your heart desires.
+                From mighty mountains, majestic rivers, unbeaten paths to the sprawling alpine meadows
+              </p>
+              <div><span><i class="fa fa-map-marker"></i>Rishikesh</span>
+                <span><i class="fa fa-sun-o"></i>4 Days</span>
+                <span><i class="fa fa-moon-o"></i>3 Nights</span>
+
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Book Now</button>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+          <!--last column end -->
+        </div>
+    </div>
+
+
+  </section>
+  <div class="modal fade" id="exampleModalCenter" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Welcome to Travel Guide</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <span id="offermessage">Limited Period Offer: Enquire Now!</span>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name"  placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="phoneno">Phone No</label>
+              <input type="text" class="form-control" id="phoneno" placeholder="Enter Phoneno">
+            </div>
+            <div class="form-group">
+              <label for="traveldate">Travelling Date</label>
+              <input type="date" class="form-control" id="traveldate" placeholder="Enter travelling date">
+            </div>
+            <div class="form-group">
+              <label for="travelcount">Traveller Count</label>
+              <input type="number" class="form-control" id="travelcount" placeholder="Traveller Count">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Details</button>
+          </form>
+        </div>
+<!--        <div class="modal-footer">-->
+<!--          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--          <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--        </div>-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script th:src="@{/js/jquery.js}"></script>
+
+<!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+  <script th:src="@{/js/suggestion.js}"></script>
+  </body>
+  </html>
